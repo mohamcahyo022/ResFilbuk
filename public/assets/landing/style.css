@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poppins';
+}
+
+#blog {
+    background-color: #F36A3E;
+  }
+
+nav.bg{
+	background-color: var(--bs-body-bg);
+}
+
+.kecil{
+	font-size: 2vh;
+}
+
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	color: var(--bs-body-bg);
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.8;
+	color: var(--bs-body-bg);
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center
+	}
+	.carousel-caption {
+		bottom: 165px
+	}
+	.carousel-caption h5 {
+		font-size: 25px
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 14px
+	}
+	.carousel-caption p {
+		font-size: 15px;
+	}
+}

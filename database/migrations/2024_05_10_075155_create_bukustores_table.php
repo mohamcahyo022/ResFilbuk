@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('bukustores', function (Blueprint $table) {
+            $table->id();
+            $table->string('judul');
+            $table->string('cover');
+            $table->string('genre');
+            $table->string('rilis');
+            $table->text('deskripsi');
+            $table->string('ebook')->nullable();
+            $table->string('link_1')->nullable();
+            $table->string('link_2')->nullable();
+            $table->string('link_sope')->nullable();
+            $table->string('link_tokped')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('bukustores');
+    }
+};
